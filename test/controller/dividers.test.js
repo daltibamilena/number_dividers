@@ -1,4 +1,4 @@
-const { full_dividers_response } = require("../../controller/DividersController");
+import  { full_dividers_response } from "../../controller/DividersController"
 
 describe("Encontrar divisores e divisores primos", () => {
   test("Número 4", () => {

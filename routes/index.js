@@ -1,8 +1,8 @@
-const { Router } = require("express");
-const { celebrate, Joi, Segments } = require("celebrate");
-const {full_dividers_response} = require("../controller/DividersController");
+import { Router } from "express";
+import { celebrate, Joi, Segments } from "celebrate";
+import { full_dividers_response } from "../controller/DividersController.js";
 
-module.exports = (app) => {
+const routes = (app) => {
   app.get("/", (req, res) => {
     res.send(
       "Hello, successful request to number_dividers o/. Happy to see you here!"
@@ -21,3 +21,5 @@ module.exports = (app) => {
     }
   );
 };
+
+export { routes };

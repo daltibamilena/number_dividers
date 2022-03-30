@@ -1,5 +1,6 @@
-const app = require("../../app");
-const supertest = require("supertest");
+import { app }  from "../../app"
+import supertest from "supertest"
+
 const request = supertest(app);
 
 describe("Retornar divisores", () => {

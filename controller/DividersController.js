@@ -14,12 +14,12 @@ const dividers = (number) => {
 };
 
 const full_dividers_response = (number) => {
-   let divisores = dividers(number);
-   let primeNumbers = divisores.filter(isPrime);
-   return {
-     divisores: divisores,
-     divisoresPrimos: primeNumbers,
-   };
-}
+  let divisores = dividers(number);
+  let primeNumbers = divisores.filter(isPrime);
+  return {
+    divisores: divisores,
+    divisoresPrimos: primeNumbers,
+  };
+};
 
-exports.full_dividers_response = full_dividers_response;
+export { full_dividers_response };

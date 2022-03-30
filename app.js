@@ -1,10 +1,11 @@
-const express = require("express");
-const { errors } = require("celebrate");
+import express from "express";
+import { errors } from "celebrate";
+import { routes } from "./routes/index.js"
 
 const app = express();
 const port = 3000;
 app.use(express.json());
-require("./routes")(app);
+routes(app)
 
 app.use((err, req, res, next) => {
   next(err);
@@ -16,4 +17,4 @@ app.listen(port, () => {
   //console.log(`Example app listening on port ${port}`);
 });
 
-module.exports = app;
+export {app}

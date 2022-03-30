@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --ci --forceExit",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --ci --forceExit",
     "dividers": "node index.js"
   },
   "author": "Milena",
@@ -19,5 +19,6 @@
   },
   "devDependencies": {
     "jest": "^27.5.1"
-  }
+  },
+  "type": "module"
 }

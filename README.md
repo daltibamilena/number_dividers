@@ -5,7 +5,7 @@ Here I am to help you.
 With this code you can find dividers and their prime numbers. 
 
 Clone the project:
-``` https://github.com/daltibamilena/number_dividers ```
+``` git clone https://github.com/daltibamilena/number_dividers ```
 
 Install dependencies:
 ``` npm install ```

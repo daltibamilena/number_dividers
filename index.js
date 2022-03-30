@@ -15,10 +15,10 @@ const fetchDividers = async (number) => {
 const main = async () => {
   let number = prompt("Digite um número inteiro: ");
   let response = await fetchDividers(number);
-  let { divisores, divisoresPrimos } = await response.json();
+  let { numero, divisores, divisoresPrimos } = await response.json();
 
   console.log(
-    `Número de Entrada: ${number}\nNúmeros Divisores: ${divisores}\nDivisores Primos: ${divisoresPrimos}`
+    `Número de Entrada: ${numero}\nNúmeros Divisores: ${divisores}\nDivisores Primos: ${divisoresPrimos}`
   );
 };
 

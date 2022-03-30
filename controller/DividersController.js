@@ -17,6 +17,7 @@ const full_dividers_response = (number) => {
   let divisores = dividers(number);
   let primeNumbers = divisores.filter(isPrime);
   return {
+    numero: number,
     divisores: divisores,
     divisoresPrimos: primeNumbers,
   };

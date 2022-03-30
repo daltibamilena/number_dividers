@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --ci --forceExit",
-    "dividers": "node index.js"
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --ci --forceExit",
+    "dividers": "node index.js "
   },
   "author": "Milena",
   "license": "ISC",

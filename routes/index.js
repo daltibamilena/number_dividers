@@ -1,4 +1,3 @@
-import { Router } from "express";
 import { celebrate, Joi, Segments } from "celebrate";
 import { full_dividers_response } from "../controller/DividersController.js";
 
